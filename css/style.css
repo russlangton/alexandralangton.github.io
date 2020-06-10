@@ -1,0 +1,88 @@
+html {
+    background-color: black;
+    color: ghostwhite;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+}
+
+body {
+    border: 3px dotted paleturquoise;
+    margin: 40px;
+}
+
+#feather {
+    display: inline-block;
+    width: 250px;
+    height: relative;
+    vertical-align: middle;
+}
+.heading {
+    font-family: 'Dancing Script', cursive;
+    vertical-align: middle;
+}
+
+#instructions {
+    display: inline-block;
+    align-self: center;
+    text-align: left;
+    border: 2px dotted paleturquoise;
+    margin: 20px;
+    padding: 20px 20px;
+    line-height: 1.5rem;
+}
+
+#tableTitle {
+    font-style: italic;
+    font-size: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 4rem;
+    display: inline-block;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+.buttons {
+    background-color: paleturquoise;
+    font-family: 'Lato', sans-serif;
+    padding: 10px;
+    margin: 25px 5px;
+    font-weight: 700;
+    display: inline;
+}
+
+.label {
+    margin: 10px 0px;
+    display: block;
+}
+
+#textBody {
+    margin-bottom: 10px;
+}
+
+::placeholder {
+    font-family: "Lato", sans-serif;
+}
+
+#poemHeader {
+    font-size: 50px;
+    font-family: 'Dancing Script', cursive;;
+    display: none;
+}
+
+#poemReturn {
+    border: 2px dotted paleturquoise;
+    line-height: 1.25;
+    margin: 20px 30px 20px 30px;
+    padding: 30px 30px;
+    width: fit-content;
+    text-align: center;
+    align-self: center;
+    font-size: 18px;
+    display: none;
+    white-space: pre-wrap;
+}

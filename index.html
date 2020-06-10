@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lato:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Poem Generator</title>
+</head>
+<body>
+
+    <!-- Heading  -->
+
+    <img id="feather" src="images/feather pen.png" alt="feather quill">
+    <h1 class="heading">Welcome to the Poem Generator!</h1>
+    <h2 class="heading">Create beautiful poetry from mundane text</h2>
+
+<!-- Instructions table -->
+
+    <table id="instructions">
+        <tr>
+            <td id="tableTitle" colspan="2">How it works...<br><br></td>
+        </tr>
+        <tr>
+            <td>1.  </td>
+            <td>Copy and paste in a block of text. This will be used to create your poem.</td>
+        </tr>
+        <tr>
+            <td>2.  </td>
+            <td>Specify how many lines long you want your poem to be</td>
+        </tr>
+        <tr>
+            <td>3.  </td>
+            <td>Click on 'Write Poem'</td>
+        </tr>
+        <tr>
+            <td>4.  </td>
+            <td>Click 'Write Poem' again to create a different poem.</td>
+        </tr>
+        <tr>
+            <td>5.  </td>
+            <td>Enjoy your poem!</td>
+        </tr>
+    </table>
+
+<!-- Input data -->
+
+    <form id="form" onsubmit="return false">
+        <label for="textBody" class="label">Please enter the text you want to convert into a poem.</label>
+        <textarea id="textBody" rows="25" cols="60" name="text" placeholder="Try using an article, a story extract, a political speech... get creative!" required></textarea>
+        <label for="numLines" class="label">Please enter the number of lines you want your poem to be.</label>
+        <input type="number" id="numLines" name="lines" step="1" min="1" required><br>
+        <button class="buttons" id="submit" >Write Poem</button>
+        <button class="buttons" id="reset">Reset</button>
+
+        <!-- Return poem -->
+        <h2 id="poemHeader">Here's your poem!</h2>
+        <output name="poemOutput" id="poemReturn"></output>
+    </form>
+
+
+
+    <script src='./scripts/index.js' defer></script>
+</body>
+</html>
