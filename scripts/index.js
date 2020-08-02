@@ -44,9 +44,12 @@ const writeLine = (chain, splitText) => {
     let line = [splitText[Math.floor(Math.random() * (splitText.length - 1))]];
     let lineLength = Math.random() * (10 - 6) + 6;
     let wordCount = 0;
+    
     while (wordCount < lineLength) {
         let value = chain[line[wordCount]];
-        if (value === undefined) console.log('VALUE: ', line[wordCount])
+        if (value === undefined) {
+	    console.log('VALUE: ', line[wordCount]);
+	}
         if (value.length > 1) {
             line.push(value[Math.floor(Math.random() * value.length)]);
         } else {
@@ -54,6 +57,7 @@ const writeLine = (chain, splitText) => {
         }
         wordCount++;
     }
+    
     // weed out any unfinished endings
     const notMyEnding = ['the', 'a', 'I', 'by', 'of', 'to', 'that', 'who', 'we', 'and', 'i\'m', 'its', 'for', 'we\'ve', 'we’ve', 'or'];
 
